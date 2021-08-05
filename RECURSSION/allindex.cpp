@@ -20,6 +20,6 @@ int main()
 {
     int arr[] = {1,2,2,0,5,6};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int op[n];
+    int op[]={};
     cout << firsto(arr,n,2,op);
 }
