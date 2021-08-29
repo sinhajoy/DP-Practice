@@ -1,0 +1,5 @@
+first Command is :
+g++ -o program file_name.cpp
+
+Second command is :
+.\program.exe
