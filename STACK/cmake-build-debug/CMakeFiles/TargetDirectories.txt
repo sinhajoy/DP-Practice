@@ -1,0 +1,3 @@
+C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/cmake-build-debug/CMakeFiles/STACK.dir
+C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/cmake-build-debug/CMakeFiles/rebuild_cache.dir
