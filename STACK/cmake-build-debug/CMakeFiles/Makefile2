@@ -80,12 +80,12 @@ clean: CMakeFiles/STACK.dir/clean
 CMakeFiles/STACK.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\joysi\Documents\GitHub\DP-Practice\STACK\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target STACK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\joysi\Documents\GitHub\DP-Practice\STACK\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target STACK"
 .PHONY : CMakeFiles/STACK.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/STACK.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joysi\Documents\GitHub\DP-Practice\STACK\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joysi\Documents\GitHub\DP-Practice\STACK\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/STACK.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joysi\Documents\GitHub\DP-Practice\STACK\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/STACK.dir/rule

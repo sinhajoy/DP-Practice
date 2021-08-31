@@ -3,4 +3,4 @@ project(STACK)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(STACK main.cpp nearest-grater-to-right.cpp)
+add_executable(STACK main.cpp)

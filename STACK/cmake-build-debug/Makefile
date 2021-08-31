@@ -152,30 +152,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-nearest-grater-to-right.obj: nearest-grater-to-right.cpp.obj
-.PHONY : nearest-grater-to-right.obj
-
-# target to build an object file
-nearest-grater-to-right.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.obj
-.PHONY : nearest-grater-to-right.cpp.obj
-
-nearest-grater-to-right.i: nearest-grater-to-right.cpp.i
-.PHONY : nearest-grater-to-right.i
-
-# target to preprocess a source file
-nearest-grater-to-right.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.i
-.PHONY : nearest-grater-to-right.cpp.i
-
-nearest-grater-to-right.s: nearest-grater-to-right.cpp.s
-.PHONY : nearest-grater-to-right.s
-
-# target to generate assembly for a file
-nearest-grater-to-right.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STACK.dir\build.make CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.s
-.PHONY : nearest-grater-to-right.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +164,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... nearest-grater-to-right.obj
-	@echo ... nearest-grater-to-right.i
-	@echo ... nearest-grater-to-right.s
 .PHONY : help
 
 

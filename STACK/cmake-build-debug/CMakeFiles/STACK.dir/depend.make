@@ -3,5 +3,3 @@
 
 CMakeFiles/STACK.dir/main.cpp.obj: \
  ../main.cpp
-CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.obj: \
- ../nearest-grater-to-right.cpp

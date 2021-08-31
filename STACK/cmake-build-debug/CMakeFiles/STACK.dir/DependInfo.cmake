@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/main.cpp" "C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/cmake-build-debug/CMakeFiles/STACK.dir/main.cpp.obj"
-  "C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/nearest-grater-to-right.cpp" "C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/cmake-build-debug/CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

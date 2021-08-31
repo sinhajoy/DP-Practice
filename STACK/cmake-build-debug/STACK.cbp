@@ -83,9 +83,6 @@
 		<Unit filename="C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/main.cpp">
 			<Option target="STACK"/>
 		</Unit>
-		<Unit filename="C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/nearest-grater-to-right.cpp">
-			<Option target="STACK"/>
-		</Unit>
 		<Unit filename="C:/Users/joysi/Documents/GitHub/DP-Practice/STACK/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

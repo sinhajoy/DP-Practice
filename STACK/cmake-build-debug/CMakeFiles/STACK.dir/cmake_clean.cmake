@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/STACK.dir/main.cpp.obj"
-  "CMakeFiles/STACK.dir/nearest-grater-to-right.cpp.obj"
   "STACK.exe"
   "STACK.exe.manifest"
   "STACK.pdb"
