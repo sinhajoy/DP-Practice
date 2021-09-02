@@ -19,38 +19,38 @@ int main()
     arr.push_back(80);
 
     vector<int> ans;
-    stack<int> s;
+    stack<pair<int,int>> s;
 
     for(int i=0;i<arr.size();i++){
         if(s.empty()) ans.push_back(-1);
 
-        else if(!s.empty() && s.top()>arr[i]) ans.push_back(s.top());
+        else if(!s.empty() && s.top().first>arr[i]) ans.push_back(s.top().second);
 
-        else if(!s.empty() && s.top()<=arr[i]){
-            while(!s.empty() && s.top()<=arr[i]){
+        else if(!s.empty() && s.top().first<=arr[i]){
+            while(!s.empty() && s.top().first<=arr[i]){
                 s.pop();
             }
             if(s.empty()) ans.push_back(-1);
-            else ans.push_back(s.top());
+            else ans.push_back(s.top().second);
         }
-        s.push(arr[i]);
+        s.push({arr[i],i});
     }
     //for(int x:ans) cout << x << " ";
 
-    vector<int> index;
+    // vector<int> index;
 
-    for(int x:ans)
-    {
-        auto it=find(arr.begin(),arr.end(),x);
-        if(it!=arr.end()) index.push_back(it-arr.begin());
-        else index.push_back(-1);
+    // for(int x:ans)
+    // {
+    //     auto it=find(arr.begin(),arr.end(),x);
+    //     if(it!=arr.end()) index.push_back(it-arr.begin());
+    //     else index.push_back(-1);
 
-    }
+    // }
     
     vector<int> final_ans;
 
-    for(int i=0;i<index.size();i++){
-        final_ans.push_back(i-index[i]);
+    for(int i=0;i<ans.size();i++){
+        final_ans.push_back(i-ans[i]);
     }
 
     for(int x:final_ans) cout << x << " ";
