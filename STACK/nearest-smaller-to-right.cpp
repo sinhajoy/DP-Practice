@@ -18,17 +18,29 @@ int main()
     arr.push_back(2);
     arr.push_back(5);
 
-    vector<int> ans;
-    stack<int> s;
+    vector<int> ans_right;
+    stack<pair<int,int>> st;
 
     for(int i=arr.size()-1;i>=0;i--){
-        while(!s.empty() && s.top()>=arr[i])
-        {
-            s.pop();
+        if(st.empty()) ans_right.push_back(-1);
+
+        else if(!st.empty() && st.top().first < arr[i]) ans_right.push_back(st.top().second);
+
+        else if(!st.empty() && st.top().first>=arr[i]){
+
+            while(!st.empty() && st.top().first>=arr[i])
+            {
+                st.pop();
+            }
+
+            if(st.empty()) ans_right.push_back(-1);
+
+            else ans_right.push_back(st.top().second);
         }
-        if(s.top()<arr[i]) ans.push_back(arr[i])
-        else ans.push_back(-1);
-        s.push(arr[i]);
+
+        st.push({arr[i],i});
     }
-    for(int x:ans) cout << x << " ";
+
+    reverse(ans_right.begin(),ans_right.end());
+    for(int x:ans_right) cout << x << " ";
 }

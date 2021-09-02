@@ -15,27 +15,26 @@ int main()
 
     vector<int> ans;
 
-    stack<int> s;
+    stack<pair<int,int>> s;
 
     for(int i=0;i<arr.size();i++) {
-//         if (s.size() == 0) {
-//             ans.push_back(-1);
-//         } else if (s.size() > 0 && s.top() < arr[i]) {
-//             ans.push_back(s.top());
-//         } else if (s.size() > 0 && s.top() >= arr[i]) {
-//             while (s.size() > 0 && s.top() <= arr[i]) {
-//                 s.pop();
-//             }
-//             if (s.size() == 0) ans.push_back(-1);
-//             else ans.push_back(s.top());
-//         }
-//         s.push(arr[i]);
-        while(!s.empty() && s.top()>=arr[i]){
-            s.pop();
-        }
         if(s.empty()) ans.push_back(-1);
-        else ans.push_back(s.top());
-        s.push(arr[i]);
+
+        else if(!s.empty() && s.top().first < arr[i]) ans.push_back(s.top().second);
+
+        else if(!s.empty() && s.top().first>=arr[i]){
+
+            while(!s.empty() && s.top().first>=arr[i])
+            {
+                s.pop();
+            }
+
+            if(s.empty()) ans.push_back(-1);
+
+            else ans.push_back(s.top().second);
+        }
+
+        s.push({arr[i],i});
 
     }
 
