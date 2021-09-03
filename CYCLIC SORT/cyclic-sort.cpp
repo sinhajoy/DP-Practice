@@ -27,7 +27,7 @@ vector<int> missingNumbers(vector<int>& arr) {
         vector<int> ans;
         int i=0;
     while(i<arr.size()){
-        int correct_index=arr[i];
+        int correct_index=arr[i]-1;
         if(arr[i]<arr.size() && arr[correct_index]!=arr[i]){
             swap(arr[i],arr[correct_index]);
         }
@@ -35,8 +35,11 @@ vector<int> missingNumbers(vector<int>& arr) {
             i++;
         }
     }
+
+    for(int x:arr) cout << x <<" ";
+
      for(int i=0;i<arr.size();i++){
-         if(arr[i]!=i) ans.push_back(i);
+         if(arr[i]!=i+1) ans.push_back(i+1);
      }   
         //ans.erase(ans.begin());
         return ans;
@@ -69,13 +72,16 @@ int main()
     
     // //for(int a:arr) cout<<a<<" ";
     //4,3,2,7,8,2,3,1
-    arr.push_back(1);
+    arr.push_back(4);
+    arr.push_back(3);
+    arr.push_back(2);
+    arr.push_back(7);
+    arr.push_back(8);
+    arr.push_back(2);
+    arr.push_back(3);
     arr.push_back(1);
 
 
     vector<int>  ans=missingNumbers(arr);
-    for(int x:ans) cout << x <<" ";
-
-
-    
+    //for(int x:ans) cout << x <<" ";
 }
