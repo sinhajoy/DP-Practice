@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    stack<int> q;
+    queue<int> q;
 
     q.push(1);
     q.push(2);
@@ -12,7 +12,7 @@ int main()
     q.push(5);
 
     while(!q.empty()){
-        cout << q.top();
+        cout << q.front();
         q.pop();
     }
 
