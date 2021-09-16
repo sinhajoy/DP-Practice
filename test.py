@@ -1,2 +1,2 @@
-import math
-print(math.pi)
+import django
+print(django.get_version()*-+   aq  )
