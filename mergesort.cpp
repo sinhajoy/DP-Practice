@@ -17,7 +17,7 @@ void merge(int& arr[], int l,int m,int r)
     int  i=0,j=0,k=l;
 
     while(i<n1 && j<n2){
-        if(L[i]<=j[i]){
+        if(L[i]<=R[j]){
             arr[k]=L[i];
             i++;
         }
@@ -54,9 +54,9 @@ void mergesort(int& arr[],int l,int r)
 
 int main()
 {
-    int arr[]={5,4,8,9,1,6,3};
+    int arr[7]={5,4,8,9,1,6,3};
     for(int i : arr) cout<<arr[i];
-    int n=arr.size-1;
+    int n=sizeof(arr)/sizeof(arr[0]);
 
     mergesort(arr,0,n);
     for(int i : arr) cout<<arr[i];
